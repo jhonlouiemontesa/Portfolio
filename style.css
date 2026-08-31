@@ -1,6 +1,3 @@
-/* =========================================================
-   TOKENS
-========================================================= */
 :root {
   --bg-deep:     #0a1420;
   --bg-panel:    #101f30;
@@ -42,7 +39,6 @@ img { display: block; max-width: 100%; }
 }
 .section-title span { color: var(--cyan); }
 
-/* buttons */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -70,10 +66,6 @@ img { display: block; max-width: 100%; }
   background: rgba(41, 182, 232, 0.12);
   transform: translateY(-2px);
 }
-
-/* =========================================================
-   NAVBAR
-========================================================= */
 .navbar {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -125,9 +117,6 @@ img { display: block; max-width: 100%; }
   border-radius: 2px;
 }
 
-/* =========================================================
-   HERO
-========================================================= */
 .hero {
   background: linear-gradient(180deg, #0c1826 0%, var(--bg-deep) 100%);
   padding-bottom: 60px;
@@ -234,9 +223,6 @@ img { display: block; max-width: 100%; }
   box-shadow: 0 20px 60px rgba(0,0,0,0.55);
 }
 
-/* =========================================================
-   ABOUT
-========================================================= */
 .about {
   background: var(--bg-panel);
   padding: 90px 24px;
@@ -281,9 +267,6 @@ img { display: block; max-width: 100%; }
   font-size: 0.96rem;
 }
 
-/* =========================================================
-   JOURNEY / TIMELINE
-========================================================= */
 .journey {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -348,9 +331,6 @@ img { display: block; max-width: 100%; }
   color: var(--text-muted);
 }
 
-/* =========================================================
-   SKILLS
-========================================================= */
 .skills {
   background: var(--bg-panel);
   padding: 90px 24px;
@@ -395,14 +375,10 @@ img { display: block; max-width: 100%; }
 @keyframes grow {
   to { width: var(--w); }
 }
-/* fallback for browsers without animation-timeline */
 @supports not (animation-timeline: view()) {
   .bar-fill { width: var(--w); animation: none; }
 }
 
-/* =========================================================
-   CONTACT
-========================================================= */
 .contact {
   max-width: 760px;
   margin: 0 auto;
@@ -445,9 +421,6 @@ img { display: block; max-width: 100%; }
   min-height: 1.2em;
 }
 
-/* =========================================================
-   FOOTER
-========================================================= */
 .footer {
   border-top: 1px solid var(--border-soft);
   padding: 22px 24px;
@@ -470,9 +443,6 @@ img { display: block; max-width: 100%; }
 }
 .back-top:hover { transform: translateY(-3px); }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 @media (max-width: 860px) {
   .hero-content { grid-template-columns: 1fr; text-align: center; }
   .hero-image { order: -1; }

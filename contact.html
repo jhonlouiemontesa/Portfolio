@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jhon Louie — Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Jhon<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Profile</a></li>
+      <li><a href="showcase.html">Showcase</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="page page-contact">
+      <h2 class="section-title">Contact <span>Me!</span></h2>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>Have a question or an opportunity? Reach out through any of these — I'd love to hear from you.</p>
+
+          <ul class="info-list">
+            <li><span class="info-icon">📍</span> Cebu City, Philippines</li>
+            <li><span class="info-icon">✉️</span> your.email@example.com</li>
+            <li><span class="info-icon">📱</span> +63 9XX XXX XXXX</li>
+          </ul>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/jhon.montesa.2024" aria-label="Facebook"><i class="icon">f</i></a>
+            <a href="https://www.tiktok.com/@jhonmontesa" aria-label="Tiktok"><i class="icon">t</i></a>
+            <a href="https://www.instagram.com/montesajhonlouie/" aria-label="Instagram"><i class="icon">in</i></a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return handleSubmit(event)">
+          <div class="form-row">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-row">
+            <input type="tel" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+          </div>
+          <textarea placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit" class="btn btn-filled">Submit</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright © 2026 by Jhon Louie. All Rights Reserved.</p>
+    <div class="page-nav-buttons">
+      <a href="showcase.html" class="page-arrow" aria-label="Previous page">←</a>
+      <span class="page-indicator">Page 3 of 3</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
